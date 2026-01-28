@@ -79,6 +79,27 @@
     This page always displays the most recent snapshot available in the repository.
   </p>
 
+  <h2>Bitcoin Chart</h2>
+  <img
+  id="btc-img"
+  alt="Bitcoin Daily Chart"
+  />
+  <script>
+  const url = "https://raw.githubusercontent.com/aglucaci/Algorand/main/outputs/BTC_TODAY.png";
+  document.getElementById("algo-img").src = url + "?v=" + new Date().toISOString().slice(0,10);
+  </script>
+
+  <h2>Ethereum Chart</h2>
+  <img
+  id="eth-img"
+  alt="Ethereum Daily Chart"
+  />
+  <script>
+  const url = "https://raw.githubusercontent.com/aglucaci/Algorand/main/outputs/ETH_TODAY.png";
+  document.getElementById("algo-img").src = url + "?v=" + new Date().toISOString().slice(0,10);
+  </script>
+
+  
   <div class="note">
     ⚠️ This page is for informational and educational purposes only and does not
     constitute financial advice.
